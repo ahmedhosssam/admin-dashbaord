@@ -1,0 +1,24 @@
+/* color-pallete : Violet */
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.sidebar {
+  display: grid;
+  background-color: #5b21b6;
+  color: white;
+}
+
+.main {
+  display: grid;
+}
