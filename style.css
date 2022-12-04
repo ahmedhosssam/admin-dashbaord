@@ -9,16 +9,137 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 2fr;
   grid-auto-flow: column;
+  background-color: #f5f3ff;
 }
 
 .sidebar {
   display: grid;
+  grid-row: 1 / 4;
+  grid-template-rows: 100px 1fr 1.5fr;
   background-color: #5b21b6;
   color: white;
+  height: 100%;
+  padding-left: 15px;
+}
+
+.side-header {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 5px;
+  font-size: 23px;
+}
+
+.side-header svg {
+  width: 30px;
+}
+
+.sidebar button {
+  background-color: #5b21b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.sidebar .sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sidebar .additional-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .main {
   display: grid;
+  grid-column: 2/4;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 8px 5px 15px #8552d1;
+  padding: 15px 0px 15px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 50px;
+  height: 130px;
+}
+
+.header img {
+  width: 55px;
+  border-radius: 25px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-pic {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar input {
+  background-color: #e9e4ff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 400px;
+}
+
+.right button {
+  background-color: #5b21b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-status {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-status button {
+  background-color: white;
+}
+
+.profile-status svg {
+  color: rgb(24, 24, 24);
+}
+
+.profile-status img {
+  width: 40px;
 }
